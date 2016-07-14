@@ -369,12 +369,12 @@ public class MapaRutas extends AppCompatActivity {
         verificarGPS();
 
         markerInicio = googleMap.addMarker(new MarkerOptions().position(locationDefault)
-                .title("Origen").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))
+                .title("Origen").icon(BitmapDescriptorFactory.fromAsset("icons/inicio.png"))
                 .draggable(true));
         markerInicio.showInfoWindow();
 
         markerMeta = googleMap.addMarker(new MarkerOptions().position(new LatLng(-16.4030657, -71.5258617))
-                .title("Destino").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN))
+                .title("Destino").icon(BitmapDescriptorFactory.fromAsset("icons/fin.png"))
                 .draggable(true));
         markerMeta.showInfoWindow();
 

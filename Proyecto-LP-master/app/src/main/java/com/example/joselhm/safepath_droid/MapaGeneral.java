@@ -111,7 +111,7 @@ public class MapaGeneral extends Fragment implements OnMapReadyCallback {
             //getLocation();
             //Animaciones para el marker
             verificarGPS();
-            Constantes.miPosicion  = mMap.addMarker(new MarkerOptions().position(locationDefault).title("Tu estas aqui!"));
+            Constantes.miPosicion  = mMap.addMarker(new MarkerOptions().position(locationDefault).title("Tu estas aqui!").icon(BitmapDescriptorFactory.fromAsset("icons/inicio.png")));
 
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(locationDefault, zoom_));
 

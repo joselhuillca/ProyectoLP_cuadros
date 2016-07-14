@@ -30,6 +30,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.Circle;
 import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
@@ -123,6 +124,7 @@ public class AddZona extends Fragment implements OnMapReadyCallback {
             my_marker = googleMap.addMarker(new MarkerOptions()
                     .position(locationDefault)
                     .title("Zona a añadir")
+                    //.icon(BitmapDescriptorFactory.fromAsset("icons/inicio.png"))
                     .draggable(true));
 
             my_zone = googleMap.addCircle(new CircleOptions()
